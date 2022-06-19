@@ -1,0 +1,35 @@
+=====DECLA=====
+const struct __cppobj __declspec(align(8)) Block
+{
+  Block_vtbl *__vftable /*VFT*/;
+  const unsigned __int8 mData;
+  const BlockLegacy *mLegacyBlock;
+  CompoundTag mSerializationId;
+  unsigned int mRuntimeId;
+};
+=====INMEM=====
+00000000 Block           struc ; (sizeof=0x38, align=0x8, copyof_8232)
+00000000                                         ; XREF: ?_sendLevelData@ServerNetworkHandler@@AEAAXAEAVServerPlayer@@AEBVNetworkIdentifier@@@Z/r
+00000000 __vftable       dq ?                    ; XREF: ServerNetworkHandler::_sendLevelData(ServerPlayer &,NetworkIdentifier const &)+48/w
+00000000                                         ; ServerNetworkHandler::_sendLevelData(ServerPlayer &,NetworkIdentifier const &):loc_14011CDB1/r ... ; offset
+00000008 mData           db ?                    ; XREF: ServerNetworkHandler::_sendLevelData(ServerPlayer &,NetworkIdentifier const &)+263/o
+00000008                                         ; ServerNetworkHandler::_sendLevelData(ServerPlayer &,NetworkIdentifier const &)+4EE/r ...
+00000009                 db ? ; undefined
+0000000A                 db ? ; undefined
+0000000B                 db ? ; undefined
+0000000C                 db ? ; undefined
+0000000D                 db ? ; undefined
+0000000E                 db ? ; undefined
+0000000F                 db ? ; undefined
+00000010 mLegacyBlock    dq ?                    ; XREF: ServerNetworkHandler::_sendLevelData(ServerPlayer &,NetworkIdentifier const &)+747/w
+00000010                                         ; ServerNetworkHandler::_sendLevelData(ServerPlayer &,NetworkIdentifier const &)+751/w ... ; offset
+00000018 mSerializationId CompoundTag ?          ; XREF: ServerNetworkHandler::_sendLevelData(ServerPlayer &,NetworkIdentifier const &):loc_14011D01E/r
+00000018                                         ; ServerNetworkHandler::_sendLevelData(ServerPlayer &,NetworkIdentifier const &)+75B/w ...
+00000030 mRuntimeId      dd ?                    ; XREF: ServerNetworkHandler::_sendLevelData(ServerPlayer &,NetworkIdentifier const &)+78C/w
+00000030                                         ; ServerNetworkHandler::_sendLevelData(ServerPlayer &,NetworkIdentifier const &)+80C/w ...
+00000034                 db ? ; undefined
+00000035                 db ? ; undefined
+00000036                 db ? ; undefined
+00000037                 db ? ; undefined
+00000038 Block           ends
+=====ENDSF=====
