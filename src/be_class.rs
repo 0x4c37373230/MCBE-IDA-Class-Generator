@@ -105,7 +105,7 @@ impl BEClass {
             if &buf_str != " " && &var_name != " " {
                 match fn_type {
                     FunctionType::GETTERS => {
-                        self.getters.push_str(&format!("\tauto get{}() -> {}{{\n\t\treturn {}<{}>(reintepret_cast<VA>(this) + 0x{:X}}}); \n\t}}\n", name_for_method(&var_name), &buf_str, cast_type(&buf_str), &buf_str.trim(), self.data.offsets[index]));
+                        self.getters.push_str(&format!("\tauto get{}() -> {}{{\n\t\treturn {}<{}>(reintepret_cast<VA>(this) + 0x{:X}); \n\t}}\n", name_for_method(&var_name), &buf_str, cast_type(&buf_str), &buf_str.trim(), self.data.offsets[index]));
                     }
                     FunctionType::SETTERS => {
                         self.setters.push_str(&format!("\tauto set{}({} param_1) -> void {{\n\t\t{}<{}>(reintepret_cast<VA>(this) + 0x{:X}) = param_1;\n\t}}\n", name_for_method(&var_name), &buf_str, cast_type(&buf_str), &buf_str.trim(), self.data.offsets[index]))

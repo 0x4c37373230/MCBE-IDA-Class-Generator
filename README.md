@@ -16,28 +16,28 @@ Once that's done you can just fire up a command prompt, run something along thes
 const class Block
 {
 public:
-	auto getData;() -> const unsigned __int8 {
-		return *reinterpret_cast<const unsigned __int8>(reintepret_cast<VA>(this) + 0x8}); 
+	auto getData() -> const unsigned __int8 {
+		return *reinterpret_cast<const unsigned __int8>(reintepret_cast<VA>(this) + 0x8); 
 	}
-	auto getLegacyBlock;() -> const BlockLegacy *{
-		return reinterpret_cast<const BlockLegacy *>(reintepret_cast<VA>(this) + 0x10}); 
+	auto getLegacyBlock() -> const BlockLegacy *{
+		return reinterpret_cast<const BlockLegacy *>(reintepret_cast<VA>(this) + 0x10); 
 	}
-	auto getSerializationId;() -> CompoundTag {
-		return *reinterpret_cast<CompoundTag>(reintepret_cast<VA>(this) + 0x18}); 
+	auto getSerializationId() -> CompoundTag {
+		return *reinterpret_cast<CompoundTag>(reintepret_cast<VA>(this) + 0x18); 
 	}
-	auto getRuntimeId;() -> unsigned int {
-		return *reinterpret_cast<unsigned int>(reintepret_cast<VA>(this) + 0x30}); 
+	auto getRuntimeId() -> unsigned int {
+		return *reinterpret_cast<unsigned int>(reintepret_cast<VA>(this) + 0x30); 
 	}
-	auto setData;(const unsigned __int8  param_1) -> void {
+	auto setData(const unsigned __int8  param_1) -> void {
 		*reinterpret_cast<const unsigned __int8>(reintepret_cast<VA>(this) + 0x8) = param_1;
 	}
-	auto setLegacyBlock;(const BlockLegacy * param_1) -> void {
+	auto setLegacyBlock(const BlockLegacy * param_1) -> void {
 		reinterpret_cast<const BlockLegacy *>(reintepret_cast<VA>(this) + 0x10) = param_1;
 	}
-	auto setSerializationId;(CompoundTag  param_1) -> void {
+	auto setSerializationId(CompoundTag  param_1) -> void {
 		*reinterpret_cast<CompoundTag>(reintepret_cast<VA>(this) + 0x18) = param_1;
 	}
-	auto setRuntimeId;(unsigned int  param_1) -> void {
+	auto setRuntimeId(unsigned int  param_1) -> void {
 		*reinterpret_cast<unsigned int>(reintepret_cast<VA>(this) + 0x30) = param_1;
 	}
 };

@@ -25,9 +25,9 @@ pub enum FunctionType {
 
 pub fn name_for_method(name: &str) -> &str {
     return if name.starts_with("m") {
-        &name[1..name.len()]
+        &name[1..name.len() - 1]
     } else if name.starts_with("*m") {
-        &name[2..name.len()]
+        &name[2..name.len() - 1]
     } else {
         &name
     };
