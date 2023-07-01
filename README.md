@@ -1,3 +1,6 @@
+# THIS PROJECT IS NOW OBSOLETE. SEE [outcrop](https://github.com/0x4c37373230/outcrop-final)
+#### I decided to archive all my standalone bedrock reverse engineering and modding projects in order to combine all of them into a single, user friendly tool so others can use them as well. The MCBE IDA Class Generator and all other BDS tools will be continued and maintained there.
+
 # MCBE IDA Class Generator
 
 A relatively simple rust program to generate modern C++ compliant fully usable classes from IDA data corresponding to the Bedrock Dedicated Server, without breaking the Mojang EULA since they contain no Mojang code.
